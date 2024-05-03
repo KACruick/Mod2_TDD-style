@@ -14,7 +14,7 @@ describe ("reverse string function", function (){
 describe("reverse a string", function (){
     it('Should be a string', function() {
         const input = 123;
-        expect(reverseString(input)).to.throw(TypeError)
+        expect(() => reverseString(input)).to.throw(TypeError)
         // expect.throws(reverseString(input), TypeError)
         // expect(() => x.y.z).to.throw(ReferenceError);
         //try and catch??
